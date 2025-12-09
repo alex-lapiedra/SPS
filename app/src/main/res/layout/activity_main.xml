@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="4"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/computerIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:padding="20dp"
+        android:src="@drawable/placeholder"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:textSize="21pt"
+        android:textAlignment="gravity"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"/>
+
+    <ImageView
+        android:id="@+id/playerIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:padding="20dp"
+        android:src="@drawable/placeholder"
+        android:contentDescription="TODO"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/stoneButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:tag="stoneButton"
+                android:text="PIEDRA"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/papelButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:tag="paperButton"
+                android:text="PAPEL"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/scissorsButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:tag="scissorsButton"
+                android:text="TIJERA"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+        <Button
+            android:id="@+id/lizardButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:tag="lizardButton"
+            android:text="LAGARTO"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/spockButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:tag="spockButton"
+            android:text="SPOCK"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
